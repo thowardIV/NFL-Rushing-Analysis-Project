@@ -20,6 +20,8 @@ Rushing yards decrease when inside the red zone as there is limited distance to 
 | **2019** | **D. Henry** | 386 | **+311.73** | +0.81 | 5.15 |
 | **2020** | **A. Jones** | 221 | **+301.83** | +1.37 | 5.57 |
 
+<br>
+
 <p align="center">
   <img src="output_12_0.png" alt="Rushing Yards vs Ball Position Binned" width="85%"/>
   <br>
