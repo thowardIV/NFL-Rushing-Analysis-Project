@@ -1,14 +1,13 @@
 # NFL-Rushing-Analysis-Project
 
 ## Project Overview
-In this project, I analyzed NFL rushing data from 2016-2022 using Python. The key libraries I used were seaborn, statsmodels, and matplotlib. I used multiple regression to see what factors affected rushing yards.
+In this project, I analyzed NFL rushing data from 2016-2022 using Python. The key libraries I used were seaborn, statsmodels, and matplotlib. I used OLS regression to see what factors affected rushing yards. RYOE evaluates rusher efficiency by isolating a player's performance against situational factors like down, distance, run location, and field position.
 
 ## Dataset
 The dataset used for this analysis was retrieved using Python's nfl_data_py library.
 
 ## Key Findings
-Field position ('yardline_100') greatly impacts average rushing output.
-Rushing yards decrease when inside the red zone as there is limited distance to the redzone and the defensive depth compresses.
+Field position ('yardline_100') is a key predictor of rushing output. Average rushing yards decay significantly as defensive depth compresses and boundary constraints limit play distance.
 
 ## Top RYOE Single Season Performances
 
@@ -29,6 +28,7 @@ Rushing yards decrease when inside the red zone as there is limited distance to 
 </p>
 
 ## Feature Analysis
+This exploratory analysis evaluates key factors influencing expected rushing yards prior to the model being fitted.
 
 <table>
   <tr>
@@ -53,4 +53,26 @@ Rushing yards decrease when inside the red zone as there is limited distance to 
   </tr>
 </table>
 
+
+<details>
+<summary><b>🔬 Click to view OLS Regression Model Summary & Metric Stability Analysis</b></summary>
+
+<br>
+
+### OLS Regression Specification
+The model predicts expected rushing yards based on `down`, `ydstogo`, interaction terms, `yardline_100`, `run_location`, and `score_differential`.
+
+```text
+Dep. Variable: rushing_yards | R-squared: 0.016 | Observations: 91,430
+==============================================================================
+Variable                  Coef.    Std. Err.       t        P>|t|
+------------------------------------------------------------------------------
+Intercept                1.6083      0.136      11.846      0.000
+down[T.2.0]              1.6149      0.153      10.574      0.000
+down[T.3.0]              1.2840      0.161       7.985      0.000
+run_location[T.middle]  -0.5638      0.053     -10.725      0.000
+ydstogo                  0.2023      0.014      14.433      0.000
+yardline_100             0.0186      0.001      21.248      0.000
+score_differential      -0.0040      0.002      -2.019      0.044
+==============================================================================
 
