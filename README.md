@@ -54,12 +54,9 @@ This exploratory analysis evaluates key factors influencing expected rushing yar
 </table>
 
 
-<details>
-<summary><b>🔬 Click to view OLS Regression Model Summary & Metric Stability Analysis</b></summary>
-
 <br>
 
-### OLS Regression Specification
+## OLS Regression Specification
 The model predicts expected rushing yards based on `down`, `ydstogo`, interaction terms, `yardline_100`, `run_location`, and `score_differential`.
 
 ```text
