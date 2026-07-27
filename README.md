@@ -74,7 +74,8 @@ score_differential      -0.0040      0.002      -2.019      0.044
 ==============================================================================
 `````
 ## Year Over Year Metric Stablility
-Year over year correlation shows that RYOE/carry(r=0.374) demonstrates a higher stability than raw Yards Per Carry (r=0.348)
+- Year over year correlation shows that RYOE/carry (r=0.374) demonstrates a higher stability than raw Yards Per Carry (r=0.348).
+- RYOE per carry shows higher stability over the years because it isolates the individual rusher performance better than traditional metrics.
 
 | Metric | Year $N-1$ vs. Year $N$ Correlation ($r$) | Metric Stability |
 | :--- | :---: | :---: |
