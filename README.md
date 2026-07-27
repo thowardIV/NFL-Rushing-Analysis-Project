@@ -6,6 +6,9 @@ In this project, I analyzed NFL rushing data from 2016-2022 using Python. The ke
 ## Dataset
 The dataset used for this analysis was retrieved using Python's nfl_data_py library.
 
+## Source Code
+- <a href="https://github.com/thowardIV/NFL-Rushing-Analysis-Project/blob/main/HowardPCDAFinalProject.ipynb">My Code</a>
+
 ## Key Findings
 Field position ('yardline_100') is a key predictor of rushing output. Average rushing yards decay significantly as defensive depth compresses and boundary constraints limit play distance.
 
