@@ -72,5 +72,11 @@ ydstogo                  0.2023      0.014      14.433      0.000
 yardline_100             0.0186      0.001      21.248      0.000
 score_differential      -0.0040      0.002      -2.019      0.044
 ==============================================================================
----
-## RESAIUDFC
+`````
+## Year Over Year Metric Stablility
+Year over year correlation shows that RYOE/carry(r=0.374) demonstrates a higher stability than raw Yards Per Carry (r=0.348)
+
+| Metric | Year $N-1$ vs. Year $N$ Correlation ($r$) | Metric Stability |
+| :--- | :---: | :---: |
+| **Yards Per Carry (YPC)** | `0.348` | Baseline |
+| **RYOE Per Carry** | **`0.374`** | **+7.5% More Stable** |
